@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagoras' Theorem - Junior Cycle Maths</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with title -->
+    <header class="header">
+        <h1>Pythagoras' Theorem</h1>
+        <p class="subtitle">Master the theorem that changed geometry forever!</p>
+    </header>
+
+    <!-- Main content container -->
+    <main class="container">
+        
+        <!-- What is Pythagoras' Theorem section -->
+        <section class="section explanation">
+            <h2>What is Pythagoras' Theorem?</h2>
+            <p>Pythagoras' Theorem describes the relationship between the sides of a <strong>right-angled triangle</strong> (a triangle with one 90° angle).</p>
+            <p>In simple terms: <strong>If you know the lengths of two sides of a right-angled triangle, you can find the length of the third side!</strong></p>
+            <p class="highlight-box">This theorem is super useful in architecture, engineering, navigation, and even video game design. 🎮</p>
+        </section>
+
+        <!-- The Formula section -->
+        <section class="section formula">
+            <h2>The Formula</h2>
+            <div class="formula-box">
+                <p class="big-formula">a² + b² = c²</p>
+            </div>
+            
+            <div class="formula-explanation">
+                <div class="formula-part">
+                    <h3>What do a, b, and c mean?</h3>
+                    <ul>
+                        <li><strong>a</strong> = one of the shorter sides (called a "leg")</li>
+                        <li><strong>b</strong> = the other shorter side (called a "leg")</li>
+                        <li><strong>c</strong> = the longest side opposite the right angle (called the "hypotenuse")</li>
+                    </ul>
+                </div>
+                
+                <div class="triangle-visual">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="triangle">
+                        <!-- Right-angled triangle -->
+                        <polygon points="50,150 50,50 150,150" fill="#E8F4F8" stroke="#2C5282" stroke-width="2"/>
+                        
+                        <!-- Right angle indicator -->
+                        <rect x="50" y="130" width="20" height="20" fill="none" stroke="#2C5282" stroke-width="1.5"/>
+                        
+                        <!-- Side labels -->
+                        <text x="35" y="105" class="triangle-label" fill="#FF6B6B">a</text>
+                        <text x="100" y="170" class="triangle-label" fill="#4ECDC4">b</text>
+                        <text x="110" y="95" class="triangle-label" fill="#FFE66D">c</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Worked Example section -->
+        <section class="section worked-example">
+            <h2>Worked Example 📝</h2>
+            <div class="example-box">
+                <p class="problem"><strong>Problem:</strong> A right-angled triangle has sides of 3cm and 4cm. What is the length of the hypotenuse?</p>
+                
+                <div class="step">
+                    <p class="step-title">Step 1: Write the formula</p>
+                    <p class="step-content">a² + b² = c²</p>
+                </div>
+                
+                <div class="step">
+                    <p class="step-title">Step 2: Substitute the values</p>
+                    <p class="step-content">3² + 4² = c²</p>
+                </div>
+                
+                <div class="step">
+                    <p class="step-title">Step 3: Calculate the squares</p>
+                    <p class="step-content">9 + 16 = c²</p>
+                </div>
+                
+                <div class="step">
+                    <p class="step-title">Step 4: Add them together</p>
+                    <p class="step-content">25 = c²</p>
+                </div>
+                
+                <div class="step">
+                    <p class="step-title">Step 5: Find the square root</p>
+                    <p class="step-content">c = √25 = <strong>5cm</strong></p>
+                </div>
+                
+                <p class="answer">✓ The hypotenuse is 5cm</p>
+            </div>
+        </section>
+
+        <!-- Common Mistakes section -->
+        <section class="section mistakes">
+            <h2>Common Mistakes to Avoid ❌</h2>
+            
+            <div class="mistake">
+                <h3>Mistake 1: Forgetting to square the sides</h3>
+                <p><span class="wrong">❌ Wrong:</span> 3 + 4 = c (you need to square first!)</p>
+                <p><span class="correct">✓ Right:</span> 3² + 4² = c²</p>
+            </div>
+            
+            <div class="mistake">
+                <h3>Mistake 2: Using c on the wrong side</h3>
+                <p><span class="wrong">❌ Wrong:</span> a² + c² = b² (c is always the hypotenuse, the longest side)</p>
+                <p><span class="correct">✓ Right:</span> a² + b² = c² (c is opposite the right angle)</p>
+            </div>
+            
+            <div class="mistake">
+                <h3>Mistake 3: Forgetting the square root</h3>
+                <p><span class="wrong">❌ Wrong:</span> If a² + b² = 25, then c = 25</p>
+                <p><span class="correct">✓ Right:</span> If a² + b² = 25, then c = √25 = 5</p>
+            </div>
+        </section>
+
+        <!-- Practice Quiz section -->
+        <section class="section quiz">
+            <h2>Practice Quiz 🎯</h2>
+            <p class="quiz-intro">Test your understanding! Choose the correct answer for each question.</p>
+            
+            <div class="quiz-container">
+                <!-- Question 1 -->
+                <div class="quiz-question">
+                    <p class="question-text"><strong>Question 1:</strong> What is Pythagoras' Theorem used for?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="a">
+                            <span>Finding the area of any triangle</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="b">
+                            <span>Finding unknown sides in a right-angled triangle</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="c">
+                            <span>Measuring the temperature</span>
+                        </label>
+                    </div>
+                    <p class="feedback" id="feedback-1"></p>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="quiz-question">
+                    <p class="question-text"><strong>Question 2:</strong> In the formula a² + b² = c², what does 'c' represent?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q2" value="a">
+                            <span>The shortest side</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="b">
+                            <span>The hypotenuse (longest side opposite the right angle)</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="c">
+                            <span>Any side of the triangle</span>
+                        </label>
+                    </div>
+                    <p class="feedback" id="feedback-2"></p>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="quiz-question">
+                    <p class="question-text"><strong>Question 3:</strong> A right-angled triangle has sides 5cm and 12cm. What is the hypotenuse?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q3" value="a">
+                            <span>13cm</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="b">
+                            <span>17cm</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="c">
+                            <span>8.5cm</span>
+                        </label>
+                    </div>
+                    <p class="feedback" id="feedback-3"></p>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="quiz-question">
+                    <p class="question-text"><strong>Question 4:</strong> Which of these is NOT a Pythagorean triple?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q4" value="a">
+                            <span>3, 4, 5</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="b">
+                            <span>5, 12, 13</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="c">
+                            <span>2, 3, 4</span>
+                        </label>
+                    </div>
+                    <p class="feedback" id="feedback-4"></p>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="quiz-question">
+                    <p class="question-text"><strong>Question 5:</strong> If a² + b² = 100, what is c?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q5" value="a">
+                            <span>50</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="b">
+                            <span>10</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="c">
+                            <span>100</span>
+                        </label>
+                    </div>
+                    <p class="feedback" id="feedback-5"></p>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <button class="submit-btn" onclick="checkAnswers()">Check Your Answers</button>
+            
+            <!-- Results section -->
+            <div class="results" id="results"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made for Junior Cycle Maths students 📚 | Keep practising!</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
