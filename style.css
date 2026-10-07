@@ -1,0 +1,260 @@
+:root {
+  --blue: #2d6cdf;
+  --light-blue: #dfeeff;
+  --orange: #ff9f43;
+  --yellow: #ffd166;
+  --green: #57cc99;
+  --dark: #1f2a44;
+  --light: #f8fbff;
+  --red: #ef476f;
+  --white: #ffffff;
+  --shadow: 0 12px 30px rgba(20, 55, 100, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #f4f8ff 0%, #eaf4ff 100%);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topbar {
+  background: linear-gradient(135deg, var(--blue), #5b8def);
+  color: var(--white);
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.topbar p {
+  margin: 8px 0 0;
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 26px 24px;
+  margin: 24px 0;
+  box-shadow: var(--shadow);
+}
+
+h2 {
+  color: var(--blue);
+  margin-top: 0;
+  font-size: clamp(1.5rem, 2vw, 2.1rem);
+}
+
+h3 {
+  color: var(--dark);
+}
+
+.formula-box {
+  background: linear-gradient(135deg, #fef3d0, #ffe8a3);
+  border-left: 8px solid var(--orange);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.formula-box p {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: bold;
+  margin: 0;
+  color: var(--dark);
+}
+
+.formula-meaning {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  align-items: center;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.triangle-diagram {
+  display: flex;
+  justify-content: center;
+}
+
+.triangle {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #eaf7ff, #d8ecff);
+  border-radius: 18px;
+  border: 3px solid var(--blue);
+  clip-path: polygon(20% 82%, 20% 20%, 80% 82%);
+}
+
+.label {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.a {
+  left: 18%;
+  top: 38%;
+  color: var(--red);
+}
+
+.b {
+  left: 50%;
+  top: 80%;
+  color: var(--green);
+}
+
+.c {
+  left: 58%;
+  top: 40%;
+  color: var(--orange);
+}
+
+.steps {
+  padding-left: 20px;
+}
+
+.answer {
+  background: #ebfff5;
+  border-left: 6px solid var(--green);
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.mistakes {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mistakes li {
+  background: #fff4f5;
+  border-left: 6px solid var(--red);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.practice {
+  background: #eef9ff;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.quiz-section {
+  background: linear-gradient(180deg, #ffffff, #f5f8ff);
+}
+
+.quiz-question {
+  padding: 16px 0;
+  border-bottom: 1px solid #dfeafc;
+}
+
+.quiz-question:last-of-type {
+  border-bottom: none;
+}
+
+.quiz-question p {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.quiz-question label {
+  display: block;
+  background: #f7faff;
+  border: 1px solid #d7e5ff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.quiz-question input {
+  margin-right: 10px;
+}
+
+.feedback {
+  min-height: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  padding-left: 4px;
+}
+
+.feedback.correct {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.feedback.incorrect {
+  color: var(--red);
+  font-weight: bold;
+}
+
+#checkQuizBtn {
+  background: linear-gradient(135deg, var(--blue), #5d8ef4);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 18px;
+  transition: transform 0.2s ease;
+}
+
+#checkQuizBtn:hover {
+  transform: translateY(-2px);
+}
+
+.quiz-result {
+  margin-top: 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 20px 40px;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .formula-meaning {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px 16px;
+  }
+
+  .topbar {
+    padding: 22px 0;
+  }
+}
